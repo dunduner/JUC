@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author zhangning
  * @date 2020/8/12
  */
-public class MyContainer<T> {
+public class MyContainer生产者消费者<T> {
     private final LinkedList<T> list = new LinkedList<T>();
     private final int MAX = 10;
 
@@ -25,8 +25,8 @@ public class MyContainer<T> {
         try {
             reentrantLock.lock();
             while (list.size() == MAX) {//最多发10个 慢了 就休息，让消费者去消费
-                provider.await();
                 System.out.println("产能过剩 10个了 满库存了。通知消费者去吃");
+                provider.await();
             }
             list.add(t);
             ++count;
@@ -60,7 +60,7 @@ public class MyContainer<T> {
 
 
     public static void main(String[] args) {
-        MyContainer<String> myContainer = new MyContainer<>();
+        MyContainer生产者消费者<String> myContainer = new MyContainer生产者消费者<>();
 
         //10个线程，每个线程取5个内容
         for (int i = 0; i < 10; i++) {

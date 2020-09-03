@@ -9,7 +9,7 @@ public class LockSupportDemo {
         Thread thread = Thread.currentThread();
         String name = thread.getName();
         System.out.println(name);
-
+        msg="googole";
         new Thread(() -> {
             try {
                 msg="www.baidu.com";

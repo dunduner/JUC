@@ -11,7 +11,6 @@ public class Ticket {
     public Ticket(int ticketNum) {
         this.ticketNum = ticketNum;
     }
-
     //卖票的方法
     public void  sale() {
         reentrantLock.lock();//进入到阻塞状态，一直到unlock执行后解除阻塞
