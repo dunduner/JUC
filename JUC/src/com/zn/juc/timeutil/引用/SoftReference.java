@@ -1,4 +1,4 @@
-package com.zn.juc.timeutil.引用;
+package com.zn.juc.timeutil.寮曠敤;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,6 +24,6 @@ public class SoftReference {
 
         //-Xms=20M -Xmx=20M
         byte[] m2 = new byte[1024 * 1024 * 15];
-        System.out.println("内存不够用了:"+m.get());
+        System.out.println("锟节存不锟斤拷锟斤拷锟斤拷:"+m.get());
     }
 }

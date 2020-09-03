@@ -17,6 +17,7 @@ public class Comsumer {
                 while (true){
                     if(queue.isEmpty()){
                         //如果空的话 结束循环
+                        System.out.println("没得消费");
                         break;
                     }
                     try {

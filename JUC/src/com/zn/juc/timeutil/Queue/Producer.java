@@ -11,10 +11,10 @@ public class Producer {
 
     public void shengchan(){
         //模拟出3个线程生产数据
-        for (int i = 0; i <3 ; i++) {
+        for (int i = 0; i <1 ; i++) {
             new Thread(() -> {
                 //每人生产5条数据
-                for (int j = 0; j < 5; j++) {
+                for (int j = 1; j <=15; j++) {
                     String data = Thread.currentThread().getName()+"{生产数据}"+j;
                     try {
                         queue.put(data);//
