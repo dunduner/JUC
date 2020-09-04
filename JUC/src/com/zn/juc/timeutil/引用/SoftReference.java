@@ -24,6 +24,6 @@ public class SoftReference {
 
         //-Xms=20M -Xmx=20M
         byte[] m2 = new byte[1024 * 1024 * 15];
-        System.out.println("�ڴ治������:"+m.get());
+        System.out.println(m.get());
     }
 }
