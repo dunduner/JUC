@@ -1,4 +1,4 @@
-package com.zn.juc.timeutil.Executors;
+package com.zn.juc.threadpool.Executors;
 
 import java.util.HashSet;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 public class TasksDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        Set<Callable<String>> tasks  =  new HashSet<Callable<String>>() ;
+        Set<Callable<String>> tasks  =  new HashSet<>() ;
         for (int i = 0; i <10 ; i++) {
             int temp = i ;
             tasks.add(() -> {

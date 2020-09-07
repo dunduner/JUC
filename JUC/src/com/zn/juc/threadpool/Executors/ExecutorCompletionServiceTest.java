@@ -1,4 +1,4 @@
-package com.zn.juc.timeutil.Executors;
+package com.zn.juc.threadpool.Executors;
 
 import java.util.concurrent.CompletionService;
 import java.util.concurrent.ExecutorCompletionService;

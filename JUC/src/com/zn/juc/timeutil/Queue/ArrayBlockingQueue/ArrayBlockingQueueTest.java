@@ -15,7 +15,7 @@ public class ArrayBlockingQueueTest {
         }
 
         System.out.println("阻塞到这?1111");
-//        strings.take();
+        strings.take();
         strings.put("b");
         System.out.println("阻塞到这?222");
         System.out.println(strings.size());
